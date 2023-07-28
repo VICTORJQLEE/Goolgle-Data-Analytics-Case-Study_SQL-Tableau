@@ -14,19 +14,33 @@ Moreno (The director of marketing) has set a clear goal: Design marketing strate
 
 # PHASE 1: Defining the Business Question
 
-So, the business question I was assigned to analyze is quite clear: How do annual members and casual riders use Cyclistic bikes differently? Cyclistic Company wants to know the main differences between the two types of users — casual riders (who pay for each ride, and annual members (who pay a yearly subscription) through analysis of their data. In order to answer the question, I need to analyze Cyclistic’s Rides data to identify all the possible insights about different usage by members and casual rides. The goal is to get insights that could support the marketing director's strategy. My stakeholder in this project is the marketing director and I will report to her directly.
+So, the business question I was assigned to analyze is quite clear: How do annual members and casual riders use Cyclistic bikes differently? Cyclistic Company wants to know the main differences between the two types of users — casual riders (who pay for each ride, and annual members (who pay a yearly subscription) through analysis of their data. In order to answer the question, I need to analyze Cyclistic’s Rides data to identify all the possible insights about different usage by members and casual rides. And further, if there is enough data, I would try to figure out what factors motivate casual riders to buy Cyclistic annual memberships and how can Cyclistic use digital media to influence casual riders to become members. If there is not enough data, I will put these two questions for the next step of analysis and collect enough data to answer these two questions.  
+
+The goal is to get insights that could support the marketing director's strategy. My stakeholder in this project is the marketing director and I will report to her directly.
 
 # PHASE 2: PREPARING DATA
+
+## Data Source and Organization
 
 The dataset provided for this case study project includes 39 ‘.csv’ files representing each month from April 2020 to June 2023 and is located on the company’s cloud storage (Amazon Web Services: <https://divvy-tripdata.s3.amazonaws.com/index.html>).
 
 Each table uses 13 columns ("ride_id", "rideable_type", "started_at", "ended_at",       "start_station_name", "start_station_id", "end_station_name", "end_station_id", "start_lat", "start_lng", "end_lat",     "end_lng", "member_casual") to record each month's rides.
 
+Data is stored monthly on .csv format files, it is structured on rows and columns. I proceed to open one file in a spreadsheet to understand what information comes in the data.
+
+<img width="1155" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/15aa06da-912d-4e5b-bb75-b57caaee2d40">
+
 Further inspection of the files showed that there are multiple null values across tables, also columns have inconsistent naming and formatting that causes duplicates and the inability to merge tables without additional formatting.
 
-Thus, to prepare data for cleaning, we need to change the type of two columns (start_station_id, end_station_id) of the first 7 months to match the most recent data. View in BigQuery.
+Thus, to prepare data for cleaning, we need to change the type of two columns (start_station_id, end_station_id) of the first 7 months to match the most recent data. 
 
 Now that we have all the data in one place saved as a new virtual table, we can start to clean the data of possible inconsistencies and/or errors. We will also add new columns based on existing data calculations to get more in-depth insights into user behavior.
+
+### Process
+
+I will use BigQuery to combine the various datasets into one dataset and clean it. As there are over 10 million rows for all of the datasets. Google spreadsheets or Excel are unable to manage large amounts of data like this. It is essential to use a platform like BigQuery that supports huge volumes of data.
+
+
 
 <img width="416" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/857bc6a9-94d1-4724-8de0-71f7a6e42afe">
 
