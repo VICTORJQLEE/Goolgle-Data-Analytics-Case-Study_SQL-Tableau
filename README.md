@@ -39,7 +39,7 @@ Now that we have all the data in one place saved as a new virtual table, we can 
 ### Process
 
 I will use BigQuery to combine the various datasets into one dataset and clean it. As there are over 10 million rows for all of the datasets. Google spreadsheets or Excel are unable to manage large amounts of data like this. It is essential to use a platform like BigQuery that supports huge volumes of data.
-
+> 01. Data Combining.sql
 
 
 <img width="416" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/857bc6a9-94d1-4724-8de0-71f7a6e42afe">
