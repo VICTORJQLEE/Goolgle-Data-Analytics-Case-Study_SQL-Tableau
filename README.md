@@ -37,6 +37,8 @@ Thus, to prepare data for cleaning, we need to change the type of two columns (s
 Now that we have all the data in one place saved as a new virtual table, we can start to clean the data of possible inconsistencies and/or errors. We will also add new columns based on existing data calculations to get more in-depth insights into user behavior.
 
 01. Data Combining.sql
+
+https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/blob/18894401c9b96148cd37acfd57670994fff3728f/01.%20Data%20Combining.sql
    
 ### Process
 
