@@ -230,9 +230,11 @@ As the average ride's duration for members and casuals are 13.51 and 28.59 and t
 <img width="691" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/629bcfc7-42a2-4ecb-9823-38036b108295">
 
 
+As shown in the following table, there are more than 116k long rides for casual and only 10k long rides for members. 
+
 <img width="666" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/95db38ca-50f6-4292-91de-f7646e66f096">
 
-As shown in the table, there are more than 116k long rides for casual and only 10k long rides for members. 
+
 
 # Summary Analysis
 
