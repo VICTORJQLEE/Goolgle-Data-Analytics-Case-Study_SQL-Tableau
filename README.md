@@ -130,9 +130,10 @@ The started_at and ended_at shows start and end time of the trip in YYYY-MM-DD h
 
 ## Checking whether there are erros which started date  > ended date
 
-There are 8642 rows where started date > ended date. We should remove these rows for our final analysis. 
+There are 8855 rows where started date > ended date. We should remove these rows for our final analysis. 
 
-<img width="580" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/a89c187d-55b2-4f19-b55c-f4526eb4e43d">
+<img width="610" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/baa10b17-b8da-413c-83c4-15ff5b9424a0">
+
 
 ## Checking Member-Casual Types
 
