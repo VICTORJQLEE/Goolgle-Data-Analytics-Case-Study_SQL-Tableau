@@ -17,17 +17,29 @@ Moreno (The director of marketing) has set a clear goal: Design marketing strate
 In order to answer this business question, combining the background of which annual members are much more profitable than casual riders and the dataset I get which includes bike types, the total number of rides, ride's month, ride's day, ride's hour, the latitude and longitude of stations, and also the member-causal type, I will break the business question down into several hypotheses:
 
 H1: Mebmers use bikes more often than casuals.
+
 H2: Members' total ride time is higher than casuals'.
+
 H3: Members' average ride time is higher than casuals'.
+
 H4: Due to the weather in Chicago, both members and casuals prefer to use bikes in summer than winter. 
+
 H5: Members' total rides per month are higher than casuals.
+
 H6: Members' average ride duration per month is higher than casuals.
+
 H7: Members are more active on weekdays rather than weekends, casual riders are highly active on weekends. 
+
 H8: Members' total rides per day of the week are higher than casuals.
+
 H9: Members' average ride duration per day of the week is higher than casuals.
+
 H11: Members have a ride peak at 8 mornings and at 17 afternoons during weekdays while casual users tend to ride more in the afternoon during weekends.
+
 H11: Members' total rides per hour of the day are higher than casuals.
+
 H12：Members' average ride duration per hour of the day is higher than casuals.
+
 H13: Members' starting and ending locations are clustered in the downtown area, while casual customers' locations are more dispersed and along the beach. 
 
 # Phase 1: Defining the Business Question
