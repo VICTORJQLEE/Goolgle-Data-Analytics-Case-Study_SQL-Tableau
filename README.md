@@ -50,7 +50,7 @@ The goal is to get insights that could support the marketing director's strategy
 
 # Phase 2: Preparing Data
 
-## Data Source and Organization
+## Data Source and Organization 
 
 The dataset provided for this case study project includes 39 ‘.csv’ files representing each month from April 2020 to June 2023 and is located on the company’s cloud storage (Amazon Web Services: <https://divvy-tripdata.s3.amazonaws.com/index.html>).
 
