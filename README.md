@@ -118,7 +118,7 @@ I use COUNT and COUNT DISTINCT to check the duplicate rows number again.
 
 ## Checking Rideable Types
 
-There are three types of bikes: docked bike, electric bike, and classic bike. Each one has a number of trips of 2859565, 6871602, and 7279441 respectively. 
+There are three types of bikes: docked bike, electric bike, and classic bike. Each one has a number of trips of 2859565, 6871602, and 7279441 respectively.  
 
 <img width="628" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/08144ffd-9f57-48d9-92fc-2301db130003">
 
