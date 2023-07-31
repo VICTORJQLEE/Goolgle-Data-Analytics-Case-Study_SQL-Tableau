@@ -213,13 +213,28 @@ From the chart above, members have peak times from 7–9 am and 5–7 pm — 'th
 
 I expect to find any stations preference by users.
 
+For started stations, there is one with a big difference of rides (Streeter Dr & Gran Ave.) 157k rides. In fact first three stations with more rides are for casual users hitting 300k rides. The next three stations with 200k rides are for members. The top 10 stations are hitting more than 724k rides. It's about 5.5% of total rides. 
+
 <img width="813" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/728913f4-4c69-4aa4-9f8b-f4bc238f915e">
 
-For started stations, there is one with a big difference of rides (Streeter Dr & Gran Ave.) 157k rides. In fact first three stations with more rides are for casual users hitting 300k rides. The next three stations with 200k rides are for members. The top 10 stations are hitting more than 700k rides. It's about 5% of total rides. 
+For ended stations, Streeter Dr & Gran Avethere is also the one with a big difference of rides: 166k rides. The first three stations with more rides are also for casual users hitting 325k rides. The next three stations with 198k rides are for members. The top 10 stations hit more than 745k rides. It's about 5.7% of total rides. 
+
+<img width="795" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/60a4f849-4238-4f35-87d8-aacdd0d52349">
 
 
+## Long and Short Rides
 
-Summary Analysis
+As the average ride's duration for members and casuals are 13.51 and 28.59 and their standard deviations are 18.99 and 51.2 respectively, I would define long rides as longer than 131 mins which equals 28.59 + 2*51.2 and short rides are less than 131 minutes.
+
+<img width="691" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/629bcfc7-42a2-4ecb-9823-38036b108295">
+
+
+<img width="666" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/95db38ca-50f6-4292-91de-f7646e66f096">
+
+As shown in the table, there are more than 116k long rides for casual and only 10k long rides for members. 
+
+# Summary Analysis
+
 Last year 2022 Cyclistic had 5,590,846 rides, 40.1% Casual Users and 59.9% Members. About Ride Time, there were 1,836,571 ride hours, 61.41% for Casual Users and 38.59% for Members. Average ride minute was 21.21, 29.53 for Casual Users and 12.89 for Members. Here we can see an indicator that tell us Casual Users tend to take longer rides than Members.
 Hottest months for both Members and Casual were from June to September which is expected given this is summer season, representing 29% for Members and 25% for Casuals of all rides and 62% of total casual rides.
 The behavior on days of week show Members has slightly more rides from Tuesday to Thursday but in general all days of week has the same average ride around 400k rides, having Sunday the lower ride demand. In case of Casual User, has a ride’s preference for weekends with 37% of total casual rides vs 63% rides on weekdays. Ride Time average even increase on weekends meaning 42% of total casual ride hours.
