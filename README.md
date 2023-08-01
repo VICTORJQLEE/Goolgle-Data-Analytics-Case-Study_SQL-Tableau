@@ -14,13 +14,17 @@ Cyclistic’s finance analysts have concluded that annual members are much more 
 
 Moreno (The director of marketing) has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends. Moreno wants our team to answer: **How do annual members and casual riders use Cyclistic bikes differently?**
 
-In order to answer this business question, combining the background of which annual members are much more profitable than casual riders and the dataset I get which includes bike types, the total number of rides, ride's month, ride's day, ride's hour, the latitude and longitude of stations, and also the member-causal type, I will break the business question down into several hypotheses:
+# Phase 1: Defining the Business Question
+
+The business question assigned to me is quite clear: **"How do annual members and casual riders use Cyclistic bikes differently?"** Cyclistic Company seeks to understand the main differences between these two user groups - casual riders (who pay for each ride) and annual members (who pay for a yearly subscription) - through data analysis. To address this question, I will examine Cyclistic's Rides data to gain insights into the distinct usage patterns of members and casual riders. Additionally, if there is sufficient data available, I will explore the factors that motivate casual riders to purchase Cyclistic annual memberships and consider how digital media can be utilized to influence them to become members. If data is insufficient, I will prioritize addressing these questions in subsequent analyses by collecting additional relevant data.
+
+To approach this business question effectively, I will consider both the background information highlighting the higher profitability of annual members compared to casual riders and the dataset provided, which includes valuable information such as bike types, total number of rides, ride months, ride days, ride hours, latitude and longitude of stations, and member-causal type. Based on this information, I will formulate several hypotheses to guide my analysis:
 
 H1: Mebmers use bikes more often than casuals.
 
 H2: Members' total ride time is higher than casuals'.
 
-H3: Members' average ride time is higher than casuals'.
+H3: Members' average ride duration is higher than casuals'.
 
 H4: Due to the weather in Chicago, both members and casuals prefer to use bikes in summer than winter. 
 
@@ -42,11 +46,7 @@ H12：Members' average ride duration per hour of the day is higher than casuals.
 
 H13: Members' starting and ending locations are clustered in the downtown area, while casual customers' locations are more dispersed and along the beach. 
 
-# Phase 1: Defining the Business Question
-
-So, the business question I was assigned to analyze is quite clear: **How do annual members and casual riders use Cyclistic bikes differently?** Cyclistic Company wants to know the main differences between the two types of users — casual riders (who pay for each ride, and annual members (who pay a yearly subscription) through analysis of their data. In order to answer the question, I need to analyze Cyclistic’s Rides data to identify all the possible insights about different usage by members and casual rides. And further, if there is enough data, I would try to figure out what factors motivate casual riders to buy Cyclistic annual memberships and how can Cyclistic use digital media to influence casual riders to become members. If there is not enough data, I will put these two questions for the next step of analysis and collect enough data to answer these two questions.  
-
-The goal is to get insights that could support the marketing director's strategy. My stakeholder in this project is the marketing director and I will report to her directly.
+The goal of this project is to get insights that could support the marketing director's strategy. My stakeholder in this project is the marketing director and I will report to her directly.
 
 # Phase 2: Preparing Data
 
@@ -176,9 +176,16 @@ First of all, member and casual riders are compared through descriptive analysis
 
 <img width="879" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e5b4f123-2921-49e9-9458-6c82d71757ef">
 
-Here we can see, members have more rides (7,699,182) than casuals (5,475,343). However, casuals have longer total ride time (156,539,490.22) than members (104,017,510.52). On average, casuals are more than double as long as members (28.59 vs 13.51). The max and min for the two groups keep the same as we delete the data for less than one minute and longer than a day. 
+<img width="354" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/034ed3b4-1a66-40c6-961e-91317faa3137">
 
-If Cyclistic charges service fees by rides, it would be a good idea to transfer casual into members. As members use this service more often than casuals. If Cyclistic charges service fees by using time, they should focus on strategies that promote customers to use their service casually because casuals use bikes about 2 times longer than members every time. 
+<img width="731" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/f3ae5cbe-9714-45b1-820b-1cce4d7c9d3a">
+
+Here we can see, members have more rides (7,699,182) than casuals (5,475,343). Through the Chi-square test, the difference in rides between members and casuals is significant. My first hypothesis: "Mebmers use bikes more often than casuals" is true. Members use Cyclistic's service more frequently than casuals. 
+
+However, casuals have longer total ride time (156,539,490.22) than members (104,017,510.52). On average, casuals have a ride duration that is more than double that of members (28.59 minutes vs. 13.51 minutes). The max and min for the two groups keep the same as we delete the data for less than one minute and longer than a day. 
+H2: Members' total ride duration is higher than casuals' and H3: Members' average ride duration is higher than casuals', are not supported by data. 
+
+If Cyclistic charges service fees per ride, it would be beneficial to encourage casual riders to become members since members use the service more frequently than casuals. However, if Cyclistic charges fees based on usage time, they may need to focus on strategies that promote casual usage, as casual riders use bikes for about twice as long as members each time. To reach any useful conclusions, we need more data, like price, financial analysis reports, etc. 
 
 
 ## Bike Types Comparision
@@ -187,12 +194,14 @@ Now let's check which is the preferred Rideable Type for each user type.
 
 <img width="823" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/8f4310a4-08ac-42e2-b0b5-c868ba5bbac1">
 
-As shown above, members and casuals are different in bike types using. 
 
+<img width="566" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/91cedae1-812b-46ba-ac83-f6df21393ac5">
+
+As shown above, members and casuals are different in bike types using. 
 Members prefer to use classic the most, the total rides for classic is 4,413,557. The total ride minutes is 59,397,720.72, which is significantly higher than another two types. Their second favorite is the electric bike. The total rides and ride minutes are 2,028,192 and 23,422,094.82. The docked bike is their least favorite choice. Members are more likely inclined to utilize docked bikes for longer trips, given that they offer the longest average usage time.
 
-classic and electric are used almost equally with 30% for classic and 29% for electric. For ride time (longer rides), members have a little preference for classic bike meaning 22% of all ride time.
-Casuals have a marked preference for classic bikes hitting 2,436,475 rides. There is no difference on the electric and docked bike choices which have similar rides (1511286 vs 1527582). Casual users also show a preference for choosing docked bikes for longer trips, with nearly 44 minutes of them, on average, opting for docked bikes when they choose this mode of service.
+classic and electric are used almost equally with 30% for classic and 29% for electric. For ride time (longer rides), members have a little preference for classic bikes meaning 22% of all ride time.
+Casuals have a marked preference for classic bikes hitting 2,436,475 rides. There is no difference on the electric and docked bike choices which have similar rides (1511286 vs 1527582). Casual users also prefer to choose docked bikes for longer trips, with nearly 44 minutes of them, on average, opting for docked bikes when they choose this mode of service.
 
 
 ## Monthly Comparision
