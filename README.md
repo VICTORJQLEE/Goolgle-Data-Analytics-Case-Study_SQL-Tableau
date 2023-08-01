@@ -26,25 +26,27 @@ H2: Members' total ride time is higher than casuals'.
 
 H3: Members' average ride duration is higher than casuals'.
 
-H4: Due to the weather in Chicago, both members and casuals prefer to use bikes in summer than winter. 
+H4: Member and casuals are significantly different in bike type choice. 
 
-H5: Members' total rides per month are higher than casuals.
+H5: Due to the weather in Chicago, both members and casuals prefer to use bikes in summer than winter. 
 
-H6: Members' average ride duration per month is higher than casuals.
+H6: Members' total rides per month are higher than casuals.
 
-H7: Members are more active on weekdays rather than weekends, casual riders are highly active on weekends. 
+H7: Members' average ride duration per month is higher than casuals.
 
-H8: Members' total rides per day of the week are higher than casuals.
+H8: Members are more active on weekdays rather than weekends, casual riders are highly active on weekends. 
 
-H9: Members' average ride duration per day of the week is higher than casuals.
+H9: Members' total rides per day of the week are higher than casuals.
+
+H10: Members' average ride duration per day of the week is higher than casuals.
 
 H11: Members have a ride peak at 8 mornings and at 17 afternoons during weekdays while casual users tend to ride more in the afternoon during weekends.
 
-H11: Members' total rides per hour of the day are higher than casuals.
+H12: Members' total rides per hour of the day are higher than casuals.
 
-H12：Members' average ride duration per hour of the day is higher than casuals.
+H13：Members' average ride duration per hour of the day is higher than casuals.
 
-H13: Members' starting and ending locations are clustered in the downtown area, while casual customers' locations are more dispersed and along the beach. 
+H14: Members' starting and ending locations are clustered in the downtown area, while casual customers' locations are more dispersed and along the beach. 
 
 The goal of this project is to get insights that could support the marketing director's strategy. My stakeholder in this project is the marketing director and I will report to her directly.
 
@@ -195,11 +197,23 @@ Now let's check which is the preferred Rideable Type for each user type.
 <img width="823" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/8f4310a4-08ac-42e2-b0b5-c868ba5bbac1">
 
 
-<img width="566" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/91cedae1-812b-46ba-ac83-f6df21393ac5">
 
-As shown above, members and casuals are different in bike types using. 
-Members prefer to use classic the most, the total rides for classic is 4,413,557. The total ride minutes is 59,397,720.72, which is significantly higher than another two types. Their second favorite is the electric bike. The total rides and ride minutes are 2,028,192 and 23,422,094.82. The docked bike is their least favorite choice. Members are more likely inclined to utilize docked bikes for longer trips, given that they offer the longest average usage time.
 
+<img width="554" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/d3c2910b-6a74-4570-9ec4-44be84a0f1fa">
+
+
+
+<img width="686" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/37769713-f064-4c2f-ba88-86706bc59c43">
+
+
+
+<img width="516" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/d30e8e49-3d64-4ae3-874f-737b119ae289">
+
+As shown above, the difference between members and casuals is significant in bike type choice. 
+Members prefer to use classic the most, the total rides for classic is hitting 4,413,557. This is significantly higher than casual users who hit 2,436,475 rides. Based on this finding, if Cyclistic wants to transfer casuals into members, they should increase the number of classic bikes.
+Their total ride minutes with the classic bikes is 59,397,720.72, which is significantly higher than another two types. Their second favorite is the electric bike. The total rides and ride minutes are 2,028,192 and 23,422,094.82. The docked bike is their least favorite choice. Members are more likely inclined to utilize docked bikes for longer trips, given that they offer the longest average usage time.
+
+H4: Member and casuals are significantly different in bike type choice. 
 classic and electric are used almost equally with 30% for classic and 29% for electric. For ride time (longer rides), members have a little preference for classic bikes meaning 22% of all ride time.
 Casuals have a marked preference for classic bikes hitting 2,436,475 rides. There is no difference on the electric and docked bike choices which have similar rides (1511286 vs 1527582). Casual users also prefer to choose docked bikes for longer trips, with nearly 44 minutes of them, on average, opting for docked bikes when they choose this mode of service.
 
