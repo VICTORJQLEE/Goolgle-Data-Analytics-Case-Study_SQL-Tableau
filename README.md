@@ -198,19 +198,49 @@ Now let's check which is the preferred Rideable Type for each user type.
 
 
 
+Total Rides
+<img width="533" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/b9cffb40-4814-4af1-a1e0-7a07fff98d3d">
 
-<img width="554" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/d3c2910b-6a74-4570-9ec4-44be84a0f1fa">
 
 
-
+Chi-square test for Total Rides
 <img width="686" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/37769713-f064-4c2f-ba88-86706bc59c43">
 
 
-
+Total Ride Duration
 <img width="516" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/d30e8e49-3d64-4ae3-874f-737b119ae289">
 
+
+Average Ride Duration
+<img width="520" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/144f124a-9a6d-4e37-9baa-fc59eecdbbd7">
+
+**Using R function rstatix::t_test() to Test the means between members and casuals are significantly difference or not**
+
 As shown above, the difference between members and casuals is significant in bike type choice. 
-Members prefer to use classic the most, the total rides for classic is hitting 4,413,557. This is significantly higher than casual users who hit 2,436,475 rides. Based on this finding, if Cyclistic wants to transfer casuals into members, they should increase the number of classic bikes.
+
+For the classic bike total rides, members' total hit 4,413,557, accounting for 64.43%, which is significantly higher than casual users who hit 2,436,475 rides, accounting for 35.57%.
+
+For the docked bike total rides, members' total rides hit 1,257,433, accounting for 45.15%, which is significantly lower than casual users who hit 1,527,582, accounting for 54.85%.
+
+For the electric bike total rides, members' total rides hit 2,028,192, accounting for 57.30%, which is significantly higher than casual users who hit 1,511,286, accounting for 42.57%. 
+
+For the total ride duration, members are significantly lower than casuals in all three types of bikes. 
+For the classic bike, members' total ride time hit 59,397,721 minutes, accounting for 48.78%, which is significantly lower than casual users who hit 62,379,518, accounting for 51.22%.
+
+For the docked bike, members' total ride time hit 21,197,695 minutes, accounting for 24.04%, which is significantly lower than casual users who hit 66,978,388, accounting for 75.96%.
+
+For the electric bike, members' total ride time hit 23,422,095 minutes, accounting for 46.29%, which is significantly lower than casual users who hit 27,181,584, accounting for 53.71%.
+
+In terms of average ride duration, members are significantly lower than casuals in all three types of bikes.
+
+For the classic bike, members' average ride duration hit 9.68 minutes, which is significantly lower than casual users who hit 15.45.
+ 
+For the docked bike, members' average ride duration hit 12.92 minutes, which is significantly lower than casual users who hit 25.47.
+
+For the electric bike, members' average ride duration hit 8.65 minutes, which is significantly lower than casual users who hit 11.90.
+
+
+Based on these findings, if Cyclistic wants to transfer casuals into members, they should increase the number of classic bikes.
 Their total ride minutes with the classic bikes is 59,397,720.72, which is significantly higher than another two types. Their second favorite is the electric bike. The total rides and ride minutes are 2,028,192 and 23,422,094.82. The docked bike is their least favorite choice. Members are more likely inclined to utilize docked bikes for longer trips, given that they offer the longest average usage time.
 
 H4: Member and casuals are significantly different in bike type choice. 
