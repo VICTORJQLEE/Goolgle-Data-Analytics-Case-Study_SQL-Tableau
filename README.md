@@ -263,7 +263,7 @@ The following table shows the number of trips distributed by month.
 Here we see that June, July, August, and September are the top months for both. Both casual and members exhibit comparable behavior, with more trips in the summer and fewer in the winter. 
 The following visual shows the same trend.
 
-<img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/4b6d24fb-ce94-41c2-be92-c8c130013015">
+<img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/4b6d24fb-ce94-41c2-be92-c8c130013015"> 
 
 We also compared years' trends, it has the same trends. 
 
