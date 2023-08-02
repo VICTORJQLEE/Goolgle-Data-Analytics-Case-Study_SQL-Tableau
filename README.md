@@ -200,7 +200,7 @@ Firstly, we notice that Cyclistic may decrease the docked-type bikes intentional
 
 In 2020, docked-type bikes accounted for 87.66%, it only accounted for 2.38 in 2023. If possible, it's better to figure out why Cyclistic decided to reduce the number of docked-type bikes. 
 
-
+I created the following table below through Bigquery includes the total ride duration and average ride duration. 
 <img width="823" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/8f4310a4-08ac-42e2-b0b5-c868ba5bbac1">
 
 
@@ -221,10 +221,9 @@ Total Ride Duration
 Average Ride Duration
 <img width="520" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/144f124a-9a6d-4e37-9baa-fc59eecdbbd7">
 
-T-test for Average Ride Duration
+T-test for Average Ride Duration to compare the means between members and casuals
 <img width="636" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/b27f8a13-a561-40ad-903b-571787c7fb89">
 
-**Using R function rstatix::t_test() to Test the means between members and casuals are significantly difference or not**
 
 As shown above, the difference between members and casuals is significant in bike type choice. 
 
@@ -249,13 +248,10 @@ For the docked bike, members' average ride duration hit 12.92 minutes, which is 
 
 For the electric bike, members' average ride duration hit 8.65 minutes, which is significantly lower than casual users who hit 11.90.
 
+As members and casuals are significantly different in 
+there was evidence that at the 5% level, hypothesis H4 was verified that members and casuals are different bike type choice. 
 
-Based on these findings, if Cyclistic wants to transfer casuals into members, they should increase the number of classic bikes.
-Their total ride minutes with the classic bikes is 59,397,720.72, which is significantly higher than another two types. Their second favorite is the electric bike. The total rides and ride minutes are 2,028,192 and 23,422,094.82. The docked bike is their least favorite choice. Members are more likely inclined to utilize docked bikes for longer trips, given that they offer the longest average usage time.
-
-H4: Member and casuals are significantly different in bike type choice. 
-classic and electric are used almost equally with 30% for classic and 29% for electric. For ride time (longer rides), members have a little preference for classic bikes meaning 22% of all ride time.
-Casuals have a marked preference for classic bikes hitting 2,436,475 rides. There is no difference on the electric and docked bike choices which have similar rides (1511286 vs 1527582). Casual users also prefer to choose docked bikes for longer trips, with nearly 44 minutes of them, on average, opting for docked bikes when they choose this mode of service.
+Based on these findings, if Cyclistic wants to transfer casuals into members, they should increase the number of classic bikes. In 2021 and 2022, they actually conducted this strategy, increasing classic bikes, and decreasing docked-type bikes. However, in 2023, they started to increase the proportion of electric bikes. It is not aligned with their strategy. They may need to adjust their operations. 
 
 
 ## Monthly Comparision
@@ -265,7 +261,11 @@ The following table shows the number of trips distributed by month.
 <img width="611" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/49aa4cfa-797e-4718-8178-b68122d26818">
 
 Here we see that June, July, August, and September are the top months for both. Both casual and members exhibit comparable behavior, with more trips in the summer and fewer in the winter. 
+The following visual shows the same trend.
 
+<img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/4b6d24fb-ce94-41c2-be92-c8c130013015">
+
+We also compared years' trends, it has the same trends. 
 
 ## Day of Week Comparision
 
