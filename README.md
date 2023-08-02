@@ -194,6 +194,13 @@ If Cyclistic charges service fees per ride, it would be beneficial to encourage 
 
 Now let's check which is the preferred Rideable Type for each user type.
 
+Firstly, we notice that Cyclistic may decrease the docked-type bikes intentionally. 
+
+<img width="564" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/cda92585-6cb7-4530-a2fc-4e4d3823c585">
+
+In 2020, docked-type bikes accounted for 87.66%, it only accounted for 2.38 in 2023. If possible, it's better to figure out why Cyclistic decided to reduce the number of docked-type bikes. 
+
+
 <img width="823" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/8f4310a4-08ac-42e2-b0b5-c868ba5bbac1">
 
 
@@ -214,6 +221,9 @@ Total Ride Duration
 Average Ride Duration
 <img width="520" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/144f124a-9a6d-4e37-9baa-fc59eecdbbd7">
 
+T-test for Average Ride Duration
+<img width="636" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/b27f8a13-a561-40ad-903b-571787c7fb89">
+
 **Using R function rstatix::t_test() to Test the means between members and casuals are significantly difference or not**
 
 As shown above, the difference between members and casuals is significant in bike type choice. 
@@ -231,7 +241,7 @@ For the docked bike, members' total ride time hit 21,197,695 minutes, accounting
 
 For the electric bike, members' total ride time hit 23,422,095 minutes, accounting for 46.29%, which is significantly lower than casual users who hit 27,181,584, accounting for 53.71%.
 
-In terms of average ride duration, members are significantly lower than casuals in all three types of bikes.
+In terms of average ride duration, members are significantly lower than casuals in all three types of bikes. 
 
 For the classic bike, members' average ride duration hit 9.68 minutes, which is significantly lower than casual users who hit 15.45.
  
