@@ -32,7 +32,7 @@ H5: Due to the weather in Chicago, both members and casuals prefer to use bikes 
 
 H6: Members' total rides per month are higher than casuals.
 
-H7: Members' average ride duration per month is higher than casuals.
+H7: Members' total ride duration per month is higher than casuals.
 
 H8: Members are more active on weekdays rather than weekends, casual riders are highly active on weekends. 
 
@@ -206,22 +206,27 @@ I created the following table below through Bigquery includes the total ride dur
 
 
 Total Rides
+
 <img width="533" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/b9cffb40-4814-4af1-a1e0-7a07fff98d3d">
 
 
 
 Chi-square test for Total Rides
+
 <img width="686" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/37769713-f064-4c2f-ba88-86706bc59c43">
 
 
 Total Ride Duration
+
 <img width="516" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/d30e8e49-3d64-4ae3-874f-737b119ae289">
 
 
 Average Ride Duration
+
 <img width="520" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/144f124a-9a6d-4e37-9baa-fc59eecdbbd7">
 
 T-test for Average Ride Duration to compare the means between members and casuals
+
 <img width="636" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/b27f8a13-a561-40ad-903b-571787c7fb89">
 
 
@@ -263,9 +268,27 @@ The following table shows the number of trips distributed by month.
 Here we see that June, July, August, and September are the top months for both. Both casual and members exhibit comparable behavior, with more trips in the summer and fewer in the winter. 
 The following visual shows the same trend.
 
-<img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/4b6d24fb-ce94-41c2-be92-c8c130013015"> 
+We also compared years' trends, it has the same trends. The patterns over the years are similar with more trips in the summer and fewer in the winter. 
 
-We also compared years' trends, it has the same trends. 
+<img width="1086" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/988d6300-326e-455e-a753-326094f1213e">
+
+As we found similar patterns, our hypothesis H5, both members and casuals prefer to use bikes in summer than winter was verified. 
+
+<img width="817" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/62fa9aa8-a5c0-4784-97b0-67eeffc334f1">
+
+
+Through the chart above, we can see that the proportion of members is higher than casuals, except in July where both sides are almost equal (49.48 vs 50.52). Especially in the winter, the proportion of members' total rides hit 70%+. This may be the reason why the finance team concluded that annual members are much more profitable than casual riders.
+
+So we can say that our hypothesis H6: Members' total rides per month are higher than casuals, is partially supported.
+
+My seven hypothesis H7 is "Members' total ride duration per month is higher than casuals." However, through the chart below, it is not true. Members' total ride duration in January, Febuary, March, November, and December. In the rest of seven months, it is lower than casuals. So, the hypothesis is not supported. 
+
+<img width="804" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/f914c294-2704-4def-aef2-1f95ce614d7c">
+
+I alsom compared the average ride duration per month. It shows that members' average ride duration is lower than casuals in all of months. 
+
+<img width="801" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/0d31668d-4c6e-486d-bacd-2eb44d86786e">
+
 
 ## Day of Week Comparision
 
