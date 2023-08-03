@@ -194,7 +194,8 @@ To examine my hypotheses, I will look at the behaviour patterns of both casual r
 
 First of all, member and casual riders are compared through descriptive analysis to demonstrate some general traits of different users.
 
-<img width="879" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e5b4f123-2921-49e9-9458-6c82d71757ef">
+<img width="677" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/5667e6d8-abab-4273-b76f-53f9a34f32cd">
+
 
 <img width="354" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/034ed3b4-1a66-40c6-961e-91317faa3137">
 
