@@ -140,11 +140,13 @@ I use the TRIM function to remove any possible spaces in all columns.
 
 As ride_id is the primary key and has no null values, I will use it to check for duplicates. Then, I choose COUNT, GROUP BY, and HAVING functions to check duplicates. 
 
-<img width="851" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/97fc0a2f-313b-4102-bb83-b0e4762308ba">
+<img width="937" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e38d8586-07e0-4cc5-8512-80b2830373ea">
 
-<img width="534" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/0d8fefa1-9a8b-468a-a127-765300248019">
 
 I use COUNT and COUNT DISTINCT to check the duplicate rows number again. 
+
+<img width="458" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/64a26ca8-9278-48bf-a107-1d1cc82c187d">
+
 
 ## Checking Rideable Types
 
