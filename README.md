@@ -36,9 +36,9 @@ H7: Members' total ride duration per month is higher than casuals.
 
 H8: Members are more active on weekdays rather than weekends, casual riders are highly active on weekends. 
 
-H9: Members' total rides per day of the week are higher than casuals.
+H9: Members' total ride duration is higher than casuals on weekdays while lower than casuals on weekends.
 
-H10: Members' average ride duration per day of the week is higher than casuals.
+H10: Members' average ride duration is higher than casuals on weekdays while lower than casuals on weekends.
 
 H11: Members have a ride peak at 8 mornings and at 17 afternoons during weekdays while casual users tend to ride more in the afternoon during weekends.
 
@@ -281,23 +281,44 @@ Through the chart above, we can see that the proportion of members is higher tha
 
 So we can say that our hypothesis H6: Members' total rides per month are higher than casuals, is partially supported.
 
-My seven hypothesis H7 is "Members' total ride duration per month is higher than casuals." However, through the chart below, it is not true. Members' total ride duration in January, Febuary, March, November, and December. In the rest of seven months, it is lower than casuals. So, the hypothesis is not supported. 
+My seven hypothesis H7 is "Members' total ride duration per month is higher than casuals." However, through the chart below, it is not true. Members' total ride duration in January, February, March, November, and December. In the rest of the seven months, it is lower than casuals. So, the hypothesis is not supported. 
 
 <img width="804" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/f914c294-2704-4def-aef2-1f95ce614d7c">
 
-I alsom compared the average ride duration per month. It shows that members' average ride duration is lower than casuals in all of months. 
+I also compared the average ride duration per month. It shows that members' average ride duration is lower than casuals in all of the months. 
 
 <img width="801" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/0d31668d-4c6e-486d-bacd-2eb44d86786e">
 
 
 ## Day of Week Comparision
 
-The table below shows which day of week has the highest demand by different users.
+The table below shows which day of the week has the highest demand by different users.
 
 <img width="753" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/d94dc66f-355f-436c-ace9-4ed0b162bb47">
 
 It turns out that Saturdays, Sundays, and Fridays are best for casual customers, while the numbers of rides from members are more or less stable throughout the week and the top ride days are Wednesday, Thursday, and Tuesday. Sundays are the slowest days for members. The average ride of casuals is around 30 minutes. On the other hand, the average ride of members is around 13 minutes increasing a little bit on weekends to 15 minutes. This observation is almost the total opposite of that of casual customers. This can be because casual customers are tourists from other cities or even countries who visit Chicago on weekends when they have free time. On the other hand, members are local who regularly rides to and from their work, and they don't ride as much on weekends, especially on Sundays, as on weekdays.
 
+### Day of Week Total Rides
+
+<img width="782" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/880c0a1a-cfb7-4cdc-be0d-4dd548ca60b4">
+
+Through the chart above, it is clear that casuals' total rides on weekends are higher than members while members' are higher on weekdays. 
+MY hypothesis "H8: Members are more active on weekdays rather than weekends, and casual riders are highly active on weekends" is supported.  
+
+
+
+### Day of Week Total Ride Duration
+
+<img width="807" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/49df6e8f-6046-4802-8885-697c7635ff4c">
+
+The chart above shows that casuals' day-of-week total ride duration is higher than members' except Wednesday. My hypothesis H9: Members' total ride duration is higher than casuals on weekdays while lower than casuals on weekends, is not supported. Casuals seem like to use bikes more regard to ride duration.
+
+
+### Day of Week Average Ride Duration
+
+<img width="700" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/deee3487-fdc4-420f-a9f4-2a4126b90937">
+
+For the average ride duration, casuals are higher than members on all of the days. It means that casuals always use bikes for a longer time than members on all days of the week. My hypothesis H10: Members' average ride duration is higher than casuals on weekdays while lower than casuals on weekends, is not supported. 
 
 ## Hourly Comparision
 
@@ -307,13 +328,44 @@ Based on the previous day-level analysis, the following table summarizes the tot
 
 From the chart above, members have peak times from 7–9 am and 5–7 pm — 'the rush hour'. The peaks observed from the members' group are clear signatures that they are locals and use cyclistic's bikes in their daily routines. No pronounced peaks show up in the casual customers' group. Casual users tend to ride more at afternoon. Top ride hours for both members and casual users goes from 15 to 19.
 
+### Hourly Total Rides
 
 
-## Top Stations
+<img width="1022" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/1cbc4d5d-95cf-4bfa-b41f-fb5e97379db6">
+
+Through the chart above, From 4 am to 9 pm, members' total rides are higher than casuals'.  From 10 pm to 3 am, casuals' total rides are higher than members'. 
+
+From the chart below, members' ride peak times appear at 7 am to 8 am and 16 pm to 18 pm. Casuals' ride peak times appear at 15 to 18. 
+MY hypothesis H11: Members have a ride peak at 8 mornings and at 17 afternoons during weekdays while casual users tend to ride more in the afternoon during weekends, is supported. 
+
+<img width="807" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/9c6f2b4a-f56a-43d2-bcd0-a03b18827f31">
+
+
+### Hourly Total Ride Duration
+
+<img width="1049" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/4a289bbe-4001-4105-8be1-5515b50404cf">
+
+The above chart shows that, from 5 am to 8 am, the members' proportion of ride duration is higher than casuals. For the rest hours, casuals' proportion is higher than members'. My hypothesis H12: Members' total rides per hour of the day are higher than casuals, is not supported. 
+
+
+### Hourly Average Ride Duration
+
+<img width="1045" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/d99227ec-4187-4869-be35-a26bb5150235">
+
+For the average ride duration, casuals are higher than members on all of the hours. It means that casuals always use bikes for a longer time than members at all hours of the day. My hypothesis H13: Members' average ride duration per hour of the day is higher than casuals, is not supported. 
+I got the opposite result.
+
+## Stations Distribution
 
 I expect to find any stations preference by users.
 
+<img width="887" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e4569964-c18d-4e4a-9d4c-62da36dea464">
+
+
 For started stations, there is one with a big difference of rides (Streeter Dr & Gran Ave.) 157k rides. In fact first three stations with more rides are for casual users hitting 300k rides. The next three stations with 200k rides are for members. The top 10 stations are hitting more than 724k rides. It's about 5.5% of total rides. 
+
+<img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/3984050f-add9-484b-9cf8-a7f9165e8ad0">
+
 
 <img width="813" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/728913f4-4c69-4aa4-9f8b-f4bc238f915e">
 
@@ -367,6 +419,21 @@ The bike usage reaches its peak in June-August
 Thus the campaign should start in spring offering early-bird discounts for these new types of memberships and continue during the Summer peak.
 
 
+
+Sixth Step. ACT
+Finally, I will present my recommendations based on the preliminary analysis and provide stakeholders with additional information that could improve the analysis, such as user IDs, age, and gender.
+Based on the available data, I recommend the following:
+Fact 1: Casual Users have twice the average ride duration.
+Create a marketing campaign based on average ride duration, such as offering trial benefits to casual users with an average monthly ride duration of 25 minutes.
+The campaign should target users near the top 25 stations and run from mid-spring to mid-autumn, with special promotions for weekend trips and classic bike riders.
+ Fact 2: Members use Cyclistic for going to work.
+The data suggests that members prefer to use Cyclistic for their daily commutes, with peak usage at 8 and 17, therefore, I recommend creating an alert for casual users who ride between 6 and 19, informing them of the potential cost savings they could experience by becoming members.
+Additionally, offering promotions to casual users who use Cyclistic for work or creating a special package for companies near the top 25 stations to offer Cyclistic rides as an employee benefit could be beneficial.
+This campaign should target users near the top 25 stations and run from mid-spring to mid-autumn, with special promotions for weekdays and electric and classic bike riders.
+ Fact 3: Round Trips
+Members tend to take round trips, and there is a possibility that a significant number of casual users may have the same behavior but have not yet become members.
+Thus, I suggest creating a campaign for users who use the service twice a day, offering them a special promotion if they become members.
+The campaign should target users near the top 25 stations and run from mid-spring to mid-autumn, with special promotions for weekdays and electric bike riders.
 
 
 
