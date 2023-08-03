@@ -14,6 +14,20 @@ Cyclistic’s finance analysts have concluded that annual members are much more 
 
 Moreno (The director of marketing) has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends. Moreno wants our team to answer: **How do annual members and casual riders use Cyclistic bikes differently?**
 
+# Excutive Summary
+
+Cyclistic had total 13174525,590,846 rides in the past three years, 58.44% Members and 41.56% Casual Users. About Ride Time, there were 260,556,991 ride minutes,  39.92% for Members and 60.08% for Casual Users. The average ride minute was 19.78, 13.51 for Members, and 28.59 for Casual Users. It means that Casual Users tend to take longer rides than Members. If Cyclistic charges fees based on ride time, they have to consider this phenomenon. 
+
+Both Members and Casual prefer to ride bikes during May and September. This is expected that these months are suitable for riding bikes. The rides during May and September account for 68.33% of total rides, 76.44% of total casual rides, and 62.56 of total member rides.
+
+Members prefer to ride during weekdays. There are slightly more rides from Tuesday to Thursday but in general, all days of the week have a similar demand with an average of 1099k, and having Sunday the lowest ride demand with 918k. The case of Casual User has a ride preference for weekends with 40.20% of total casual rides on Sunday and Saturday. The ride time average even increases to 45% on weekends.
+
+Members have peak hours at 8 hitting 468k and at 17 hitting 827k,  while Casual hit its peak ride hour at 17 with 531k rides. Both users have the same range of hours with more rides, from 14 to 19, hitting almost 50% of all members and casual rides and ride time.
+
+Regarding Stations there’s just one with an important difference vs the other, Streeter Dr & Grand Ave with 156K rides by Casuals, but that is not too representative.
+
+Out of 1587 Stations, the Top 25, represent 15.5% of total member rides and 15.7% of total ride hours while casuals are 21.4% of rides and 26.6% of ride time.
+
 # Phase 1: Defining the Business Question
 
 The business question assigned to me is quite clear: **"How do annual members and casual riders use Cyclistic bikes differently?"** Cyclistic Company seeks to understand the main differences between these two user groups - casual riders (who pay for each ride) and annual members (who pay for a yearly subscription) - through data analysis. To address this question, I will examine Cyclistic's Rides data to gain insights into the distinct usage patterns of members and casual riders. Additionally, if there is sufficient data available, I will explore the factors that motivate casual riders to purchase Cyclistic annual memberships and consider how digital media can be utilized to influence them to become members. If data is insufficient, I will prioritize addressing these questions in subsequent analyses by collecting additional relevant data.
@@ -298,13 +312,13 @@ The table below shows which day of the week has the highest demand by different 
 
 It turns out that Saturdays, Sundays, and Fridays are best for casual customers, while the numbers of rides from members are more or less stable throughout the week and the top ride days are Wednesday, Thursday, and Tuesday. Sundays are the slowest days for members. The average ride of casuals is around 30 minutes. On the other hand, the average ride of members is around 13 minutes increasing a little bit on weekends to 15 minutes. This observation is almost the total opposite of that of casual customers. This can be because casual customers are tourists from other cities or even countries who visit Chicago on weekends when they have free time. On the other hand, members are local who regularly rides to and from their work, and they don't ride as much on weekends, especially on Sundays, as on weekdays.
 
+
 ### Day of Week Total Rides
 
 <img width="782" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/880c0a1a-cfb7-4cdc-be0d-4dd548ca60b4">
 
 Through the chart above, it is clear that casuals' total rides on weekends are higher than members while members' are higher on weekdays. 
 MY hypothesis "H8: Members are more active on weekdays rather than weekends, and casual riders are highly active on weekends" is supported.  
-
 
 
 ### Day of Week Total Ride Duration
@@ -328,8 +342,8 @@ Based on the previous day-level analysis, the following table summarizes the tot
 
 From the chart above, members have peak times from 7–9 am and 5–7 pm — 'the rush hour'. The peaks observed from the members' group are clear signatures that they are locals and use cyclistic's bikes in their daily routines. No pronounced peaks show up in the casual customers' group. Casual users tend to ride more at afternoon. Top ride hours for both members and casual users goes from 15 to 19.
 
-### Hourly Total Rides
 
+### Hourly Total Rides
 
 <img width="1022" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/1cbc4d5d-95cf-4bfa-b41f-fb5e97379db6">
 
@@ -357,15 +371,9 @@ I got the opposite result.
 
 ## Stations Distribution
 
-I expect to find any stations preference by users.
+The locations of starting and ending stations are analyzed to further understand the differences between casual and member riders.
 
-<img width="887" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e4569964-c18d-4e4a-9d4c-62da36dea464">
-
-
-For started stations, there is one with a big difference of rides (Streeter Dr & Gran Ave.) 157k rides. In fact first three stations with more rides are for casual users hitting 300k rides. The next three stations with 200k rides are for members. The top 10 stations are hitting more than 724k rides. It's about 5.5% of total rides. 
-
-<img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/3984050f-add9-484b-9cf8-a7f9165e8ad0">
-
+For started stations, there is one with a big difference of rides (Streeter Dr & Gran Ave.) 157k rides. In fact, first three stations with more rides are for casual users hitting 300k rides. The next three stations with 200k rides are for members. The top 10 stations are hitting more than 724k rides. It's about 5.5% of total rides. 
 
 <img width="813" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/728913f4-4c69-4aa4-9f8b-f4bc238f915e">
 
@@ -373,6 +381,17 @@ For ended stations, Streeter Dr & Gran Avethere is also the one with a big diffe
 
 <img width="795" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/60a4f849-4238-4f35-87d8-aacdd0d52349">
 
+Through the charts below, we can clearly see that for casual riders the areas of their interest are located around the city center and along the beach where the most cultural & leisure points are. 
+
+In contrast, members’ bike usage during the week is less dense in tourist areas but instead, it’s quite heavy around Chicago's downtown area which could also prove our hypothesis that most of the annual members commute daily to work. 
+
+For the starting stations, Casual riders often started from aquarium, vicinity of museums, parks, beach, and harbor points. In contrast, members often started from stations close to universities, residential areas, restaurants, hospitals, grocery stores, etc.
+
+<img width="887" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e4569964-c18d-4e4a-9d4c-62da36dea464">
+
+For the ended stations, we have similar findings. Casual riders ofthen end their trip near museums and other attraction sites while members often end their journey close to universities, residential and commmercial areas. 
+
+<img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/3984050f-add9-484b-9cf8-a7f9165e8ad0">
 
 ## Long and Short Rides
 
@@ -380,73 +399,64 @@ As the average ride's duration for members and casuals are 13.51 and 28.59 and t
 
 <img width="691" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/629bcfc7-42a2-4ecb-9823-38036b108295">
 
-
 As shown in the following table, there are more than 116k long rides for casual and only 10k long rides for members. 
 
 <img width="666" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/95db38ca-50f6-4292-91de-f7646e66f096">
 
 
+## Finding Summary
 
-# Summary Analysis
+Through the data analysis, we can confidently say that members and casuals are two different customer groups.
 
-Last year 2022 Cyclistic had 5,590,846 rides, 40.1% Casual Users and 59.9% Members. About Ride Time, there were 1,836,571 ride hours, 61.41% for Casual Users and 38.59% for Members. Average ride minute was 21.21, 29.53 for Casual Users and 12.89 for Members. Here we can see an indicator that tell us Casual Users tend to take longer rides than Members.
-Hottest months for both Members and Casual were from June to September which is expected given this is summer season, representing 29% for Members and 25% for Casuals of all rides and 62% of total casual rides.
-The behavior on days of week show Members has slightly more rides from Tuesday to Thursday but in general all days of week has the same average ride around 400k rides, having Sunday the lower ride demand. In case of Casual User, has a ride’s preference for weekends with 37% of total casual rides vs 63% rides on weekdays. Ride Time average even increase on weekends meaning 42% of total casual ride hours.
-Members has some peak hours at 8 and 17, reaching 100k rides at 7 mornings while Casual hit 100k rides at 11 and have its peak ride hour at 17 same as member.
-Both users have the same range hours with more rides, from 14 to 19, hitting almost 50% of all members and casual rides and ride time, while average ride is 13 for members and 28 for casual users.
-Regarding Stations there’s just one with an important difference vs other, Streeter Dr & Grand Ave with 57,525 rides by Casuals, but that is not too representative.
-Out of 1673 Stations, Top 25, represent 13% of total member rides and 12% of total ride hours while for casuals are 18% rides and 24% ride time.
-For complete the understanding of ride habits, Long Rides (Rides>24 hours) represent just 0.1% of all rides, but 16% of total ride time and casual user owner 87% of long rides, 94% of ride hours, representing 15% of all ride time.
-For short rides difference is lower, 59% for members and 41% for casual riders, but average ride is just 12.57 for members and 22.14 for casual users.
+Firstly, it's important to recognize that members and casual customers utilize Cyclistic bikes for distinct purposes. Members use the bikes for their daily commutes, whereas casual customers use them primarily for sightseeing around Chicago. Consequently, members exhibit higher bike usage frequency, with ride durations roughly half that of casual riders.
+
+Furthermore, there are notable differences in the start and end locations of their journeys. Members typically initiate and conclude their trips in proximity to universities, residential areas, and commercial districts. On the other hand, casual customers tend to start and finish their rides near parks, museums, and coastal areas.
+
+These variations in bike usage patterns, trip durations, and preferred locations should be taken into account while devising strategies to target and engage both member and casual customer segments effectively. It seems that converting casual customers to members will prove to be the most challenging task as both groups have totally different preferences. Although Cyclistic can attempt to develop a campaign to convert casual customers into members, the likelihood of achieving success seems rather low.
+
 
 # Phase 5: Sharing
 
-Now we’re ready to use these insights to make recommendations for the marketing team.
+## Use Frequency
 
-Use cases
-Casual riders mostly use bike-sharing for leisure and tourism purposes and are highly active on weekends;
-Members use bike-sharing to commute to work during the week and are more active on weekdays rather than weekends.
-Based on this finding, it’s worth considering to offer new types of membership focused on weekend rides, family membership (families tend to spend their weekends together), or offers created in collaboration with museums/theatres and other institutions to where casual riders travel the most.
+Based on the analysis, it is evident that casual riders predominantly use bike-sharing for leisure and tourism, with heightened activity during weekends. On the other hand, members primarily use bike-sharing for their daily work commute, showing increased activity on weekdays. Considering these findings, Cyclistic should explore offering new membership options tailored to weekend riders, family memberships (as families often spend weekends together), or partnerships with museums, theaters, and other popular locations frequently visited by casual riders.
 
-2. Usage time
+## Usage Time
 
-Casual riders use bikes for much longer trips than members.
-Based on this insight, we can think about offering bonuses for longer rides.
+The data indicates that casual riders take significantly longer trips compared to members. To capitalize on this insight, Cyclistic can consider introducing bonuses or rewards for riders who take longer trips, encouraging extended usage.
 
-3. Seasoning
+## Seasonality
 
-The bike usage reaches its peak in June-August
-Thus the campaign should start in spring offering early-bird discounts for these new types of memberships and continue during the Summer peak.
+Bike usage peaks during June to August, coinciding with the summer season. With this in mind, Cyclistic should initiate marketing campaigns in spring, offering early-bird discounts for the new membership types. These campaigns should continue during the peak summer months to attract and retain customers.
 
+# Phase 6: Acting
 
+"Despite the challenges, all hope is not lost for Cyclistic, as the analysis results provide a foundation for several revenue-boosting actions. To address the initial questions more succinctly, we can rephrase them as, 'How can Cyclistic increase its revenue based on the available data?' Additionally, let's not forget the last original question: 'How can the marketing team leverage digital media to maximize the number of members?'
 
-Sixth Step. ACT
-Finally, I will present my recommendations based on the preliminary analysis and provide stakeholders with additional information that could improve the analysis, such as user IDs, age, and gender.
-Based on the available data, I recommend the following:
-Fact 1: Casual Users have twice the average ride duration.
-Create a marketing campaign based on average ride duration, such as offering trial benefits to casual users with an average monthly ride duration of 25 minutes.
-The campaign should target users near the top 25 stations and run from mid-spring to mid-autumn, with special promotions for weekend trips and classic bike riders.
- Fact 2: Members use Cyclistic for going to work.
-The data suggests that members prefer to use Cyclistic for their daily commutes, with peak usage at 8 and 17, therefore, I recommend creating an alert for casual users who ride between 6 and 19, informing them of the potential cost savings they could experience by becoming members.
-Additionally, offering promotions to casual users who use Cyclistic for work or creating a special package for companies near the top 25 stations to offer Cyclistic rides as an employee benefit could be beneficial.
-This campaign should target users near the top 25 stations and run from mid-spring to mid-autumn, with special promotions for weekdays and electric and classic bike riders.
- Fact 3: Round Trips
-Members tend to take round trips, and there is a possibility that a significant number of casual users may have the same behavior but have not yet become members.
-Thus, I suggest creating a campaign for users who use the service twice a day, offering them a special promotion if they become members.
-The campaign should target users near the top 25 stations and run from mid-spring to mid-autumn, with special promotions for weekdays and electric bike riders.
+## Suggestion 1: Casual Users have longer ride durations.
 
+Create targeted social media campaigns aimed at casual customers on weekends, for example, offering trial benefits to casual users with an average monthly ride duration of 25 minutes. Target users near the top 25 stations and run the campaign from mid-spring to mid-autumn, with special promotions for weekend trips and classic bike riders. Regarding digital media utilization, Cyclistic can craft more focused and effective campaigns, for instance, a 'Weekend Experience with Cyclistic' social media campaign could incentivize them to share their positive experiences for future discounts or lower membership fees. Encouraging resharing would expand reach and attract potential customers within a limited timeframe.
 
+Furthermore, expansion opportunities could be explored by analyzing customers' home addresses, identifying tourist hotspots. By establishing branches in these areas, Cyclistic can attract both local residents and tourists as members, enhancing daily commute and sightseeing experiences.
+
+A more flexible pricing structure tailored to weekend users could also entice more customers to become members. A membership plan accommodating weekend-only bike usage would appeal to those seeking occasional rides.
+
+## Suggestion 2: Members use Cyclistic for commuting to work.
+
+Cyclistic could offer promotions to casual users who use Cyclistic for work commutes or create a corporate package for companies near the top 25 stations, providing Cyclistic rides as an employee benefit. The campaign should run from mid-spring to mid-autumn, targeting users near the top 25 stations, with special promotions for weekdays and electric and classic bike riders.
+
+## Suggestion: Round Trips
+
+Recognize that members often take round trips, and many casual users may exhibit similar behavior but have not yet become members. Develop a campaign for users who use the service twice a day, offering a special promotion for becoming members. Target users near the top 25 stations and run the campaign from mid-spring to mid-autumn, focusing on weekdays and classic bike riders.
+
+By implementing these strategies, Cyclistic can leverage the data insights to attract more members, enhance customer engagement, and ultimately increase revenue. Additionally, providing stakeholders with additional information such as user IDs, age, gender, and price could further refine the analysis and lead to even more targeted marketing efforts.
 
 
+In conclusion, the Cyclistic case study demonstrates that casual customers and members constitute distinct customer groups, making conversion challenging. However, leveraging the available data, Cyclistic can implement targeted actions to maximize revenue and cater to both segments effectively.
 
+Working on this capstone project has been an enriching experience, providing valuable insights into real-world data analysis, including data preparation and cleaning. Ensuring data reliability and integrity emerged as vital aspects before conducting the analysis. Additionally, visualizing diverse data metrics led to fascinating discoveries, informing sound business decisions.
 
-
-
-
-
-
-
-
+Ultimately, the fulfillment lies in using data to guide decisions that enhance people's lives. I look forward to future opportunities to delve into further analytical pursuits. Until then, happy analyzing!"
 
 
 
