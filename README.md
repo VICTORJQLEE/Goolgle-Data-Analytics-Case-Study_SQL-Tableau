@@ -123,7 +123,8 @@ I apply filters by using the where function in Bigquery to closely examine the n
 
 I use the LENGTH function to check if there are any type errors with ride_id column. 
 
-<img width="669" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/19268dfe-e90d-4626-850a-b03e0f536f4f">
+<img width="461" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/ef5548cc-2029-4575-86ef-1d94c0dcb355">
+
 
 The result shows that there is no type errors of ride_id.
 
