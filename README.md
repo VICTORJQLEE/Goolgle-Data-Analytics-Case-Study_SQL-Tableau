@@ -132,7 +132,8 @@ The result shows that there is no type errors of ride_id.
 
 I use the TRIM function to remove any possible spaces in all columns. 
 
-<img width="668" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/ed442b5c-b159-44ee-bacb-307724a82ef9">
+<img width="541" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/2b6d174d-bbba-4d60-9674-c6219d30448f">
+
 
 
 ## Checking Duplicates.
