@@ -229,12 +229,6 @@ Total Rides
 <img width="533" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/b9cffb40-4814-4af1-a1e0-7a07fff98d3d">
 
 
-
-Chi-square test for Total Rides
-
-<img width="686" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/37769713-f064-4c2f-ba88-86706bc59c43">
-
-
 Total Ride Duration
 
 <img width="516" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/d30e8e49-3d64-4ae3-874f-737b119ae289">
