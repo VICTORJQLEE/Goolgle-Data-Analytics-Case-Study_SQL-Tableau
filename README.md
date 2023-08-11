@@ -24,17 +24,17 @@ Members prefer to ride during weekdays. There are slightly more rides from Tuesd
 
 Members have peak hours at 8 hitting 468k and at 17 hitting 827k,  while Casual hit its peak ride hour at 17 with 531k rides. Both users have the same range of hours with more rides, from 14 to 19, hitting almost 50% of all members and casual rides and ride time.
 
-Regarding Stations there’s just one with an important difference vs the other, Streeter Dr & Grand Ave with 156K rides by Casuals, but that is not too representative.
+Regarding Stations there’s just one with an essential difference vs the other, Streeter Dr & Grand Ave with 156K rides by Casuals, but that is not too representative.
 
 Out of 1587 Stations, the Top 25, represent 15.5% of total member rides and 15.7% of total ride hours while casuals are 21.4% of rides and 26.6% of ride time.
 
 # Phase 1: Defining the Business Question
 
-The business question assigned to me is quite clear: **"How do annual members and casual riders use Cyclistic bikes differently?"** Cyclistic Company seeks to understand the main differences between these two user groups - casual riders (who pay for each ride) and annual members (who pay for a yearly subscription) - through data analysis. To address this question, I will examine Cyclistic's Rides data to gain insights into the distinct usage patterns of members and casual riders. Additionally, if there is sufficient data available, I will explore the factors that motivate casual riders to purchase Cyclistic annual memberships and consider how digital media can be utilized to influence them to become members. If data is insufficient, I will prioritize addressing these questions in subsequent analyses by collecting additional relevant data.
+The business question assigned to me is pretty clear: **"How do annual members and casual riders use Cyclistic bikes differently?"** Cyclistic Company seeks to understand the main differences between these two user groups - casual riders (who pay for each ride) and annual members (who pay for a yearly subscription) - through data analysis. To address this question, I will examine Cyclistic's Rides data to gain insights into the distinct usage patterns of members and casual riders. Additionally, if there is sufficient data available, I will explore the factors that motivate casual riders to purchase Cyclistic annual memberships and consider how digital media can be utilized to influence them to become members. If data is insufficient, I will prioritize addressing these questions in subsequent analyses by collecting additional relevant data.
 
 To approach this business question effectively, I will consider both the background information highlighting the higher profitability of annual members compared to casual riders and the dataset provided, which includes valuable information such as bike types, total number of rides, ride months, ride days, ride hours, latitude and longitude of stations, and member-causal type. Based on this information, I will formulate several hypotheses to guide my analysis:
 
-H1: Mebmers use bikes more often than casuals.
+H1: Members use bikes more often than casuals.
 
 H2: Members' total ride time is higher than casuals'.
 
@@ -121,12 +121,12 @@ I apply filters by using the where function in Bigquery to closely examine the n
 
 ## Checking ride_id Type errors with the length function
 
-I use the LENGTH function to check if there are any type errors with ride_id column. 
+I use the LENGTH function to check if there are any type errors with the ride_id column. 
 
 <img width="461" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/ef5548cc-2029-4575-86ef-1d94c0dcb355">
 
 
-The result shows that there is no type errors of ride_id.
+The result shows that there are no type errors of ride_id.
 
 ## Deleting possible spaces in all columns
 
@@ -157,11 +157,11 @@ There are three types of bikes: docked bike, electric bike, and classic bike. Ea
 
 ## Checking Datetime Type
 
-The started_at and ended_at shows start and end time of the trip in YYYY-MM-DD hh:mm:ss UTC format
+The started_at and ended_at show the start and end time of the trip in YYYY-MM-DD hh:mm:ss UTC format
 
 <img width="453" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e78e2527-bf06-4644-bd47-946152855da7">
 
-## Checking whether there are erros which started date  > ended date
+## Checking whether there are errors which started date  > ended date
 
 There are 8855 rows where started date > ended date. We should remove these rows for our final analysis. 
 
@@ -181,13 +181,13 @@ There are two types of riders: member and casual. Each one has a number of trips
 
 1. As said above, I delete all of the missing value rows. 
 2. Based on the requirement of this case study, I calculate 4 more columns: ride_duration, started_on_day, started_on_month, and started_on_year.
-3. I think that the ride_duration which are less one minute and longer than a day are outliers. So I delete all of these outliers. 
+3. I think that the ride_duration which is less one minute and longer than a day are outliers. So I delete all of these outliers. 
 
 
 # Phase 4: Analyzing Data
 
 Our business task is to answer the question: **How do annual members and casual riders use Cyclistic bikes differently?** Based on the question, I proposed three hypotheses: First, members and casual customers are fundamentally different. Second, their purposes for using Cyclistic are fundamentally different. Third, it can be very difficult, if not possible, to convert casual customers to members.
-To examine my hypotheses, I will look at the behaviour patterns of both casual riders and members, try to find similarities and differences in how they use the service, and based on our findings come up with possible proposals on how we can convert casual riders into members. For this analysis, I will use functions like COUNT, SUM, AVG, MAX, MIN, ROUND, WHERE, GROUP BY, and ORDER BY
+To examine my hypotheses, I will look at the behavior patterns of both casual riders and members, try to find similarities and differences in how they use the service, and based on our findings come up with possible proposals on how we can convert casual riders into members. For this analysis, I will use functions like COUNT, SUM, AVG, MAX, MIN, ROUND, WHERE, GROUP BY, and ORDER BY
 
 
 ## Descriptive Analysis
@@ -273,7 +273,7 @@ For the docked bike, members' average ride duration hit 12.92 minutes, which is 
 For the electric bike, members' average ride duration hit 8.65 minutes, which is significantly lower than casual users who hit 11.90.
 
 As members and casuals are significantly different in 
-there was evidence that at the 5% level, hypothesis H4 was verified that members and casuals are different bike type choice. 
+there was evidence that at the 5% level, hypothesis H4 was verified that members and casuals are different bike type choices. 
 
 Based on these findings, if Cyclistic wants to transfer casuals into members, they should increase the number of classic bikes. In 2021 and 2022, they actually conducted this strategy, increasing classic bikes, and decreasing docked-type bikes. However, in 2023, they started to increase the proportion of electric bikes. It is not aligned with their strategy. They may need to adjust their operations. 
 
@@ -390,11 +390,11 @@ Through the charts below, we can clearly see that for casual riders the areas of
 
 In contrast, members’ bike usage during the week is less dense in tourist areas but instead, it’s quite heavy around Chicago's downtown area which could also prove our hypothesis that most of the annual members commute daily to work. 
 
-For the starting stations, Casual riders often started from aquarium, vicinity of museums, parks, beach, and harbor points. In contrast, members often started from stations close to universities, residential areas, restaurants, hospitals, grocery stores, etc.
+For the starting stations, Casual riders often started from aquariums, the vicinity of museums, parks, beaches, and harbor points. In contrast, members often started from stations close to universities, residential areas, restaurants, hospitals, grocery stores, etc.
 
 <img width="887" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e4569964-c18d-4e4a-9d4c-62da36dea464">
 
-For the ended stations, we have similar findings. Casual riders ofthen end their trip near museums and other attraction sites while members often end their journey close to universities, residential and commmercial areas. 
+For the ended stations, we have similar findings. Casual riders then end their trip near museums and other attraction sites while members often end their journey close to universities, and residential and commercial areas. 
 
 <img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/3984050f-add9-484b-9cf8-a7f9165e8ad0">
 
