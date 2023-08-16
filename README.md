@@ -444,7 +444,7 @@ A more flexible pricing structure tailored to weekend users could also entice mo
 
 Cyclistic could offer promotions to casual users who use Cyclistic for work commutes or create a corporate package for companies near the top 25 stations, providing Cyclistic rides as an employee benefit. The campaign should run from mid-spring to mid-autumn, targeting users near the top 25 stations, with special promotions for weekdays and electric and classic bike riders.
 
-## Suggestion: Round Trips
+## Suggestion3: Round Trips
 
 Recognize that members often take round trips, and many casual users may exhibit similar behavior but have not yet become members. Develop a campaign for users who use the service twice a day, offering a special promotion for becoming members. Target users near the top 25 stations and run the campaign from mid-spring to mid-autumn, focusing on weekdays and classic bike riders.
 
@@ -456,108 +456,3 @@ In conclusion, the Cyclistic case study demonstrates that casual customers and m
 Working on this capstone project has been an enriching experience, providing valuable insights into real-world data analysis, including data preparation and cleaning. Ensuring data reliability and integrity emerged as vital aspects before conducting the analysis. Additionally, visualizing diverse data metrics led to fascinating discoveries, informing sound business decisions.
 
 Ultimately, the fulfillment lies in using data to guide decisions that enhance people's lives. I look forward to future opportunities to delve into further analytical pursuits. Until then, happy analyzing!"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
