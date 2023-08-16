@@ -388,7 +388,7 @@ For the starting stations, Casual riders often started from aquariums, the vicin
 
 <img width="887" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/e4569964-c18d-4e4a-9d4c-62da36dea464">
 
-For the ended stations, we have similar findings. Casual riders then end their trip near museums and other attraction sites while members often end their journey close to universities, and residential and commercial areas. 
+For the ended stations, we have similar findings. Casual riders tend to end their trip near museums and other attraction sites while members often end their journey close to universities, and residential and commercial areas. 
 
 <img width="891" alt="image" src="https://github.com/VICTORJQLEE/Goolgle-Data-Analytics-Case-Study_sql-/assets/125883856/3984050f-add9-484b-9cf8-a7f9165e8ad0">
 
